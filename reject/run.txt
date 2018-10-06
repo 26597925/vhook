@@ -1,0 +1,17 @@
+cd xxxxx\AndroidProject_Poison-master\use_poison
+
+adb push poison /data/local/tmp
+adb push libmobisec.so /data/local/tmp
+adb shell chmod 0777 /data/local/tmp/poison
+adb shell chmod 0777 /data/local/tmp/libmobisec.so
+adb shell 
+su
+ps | grep com.example.androiddecod
+
+cat /proc/17569/maps
+
+/data/local/tmp/poison /data/local/tmp/libmobisec.so 17569
+
+cat /proc/17569/maps | grep libmobisec.so
+
+adb logcat -s TTT

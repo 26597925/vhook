@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.github.piasy.fridademo.MainActivity"
+        >
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World!"
+            />
+
+    <Button
+            android:id="@+id/mBtnTest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="test"
+            />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="test2"
+        />
+
+    <Button
+        android:id="@+id/DebuggerCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DebuggerCheck"
+        />
+
+    <Button
+        android:id="@+id/WebView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WebView"
+        />
+
+    <Button
+        android:id="@+id/CheckFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CheckFile"
+        />
+
+    <Button
+        android:id="@+id/RootCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RootCheck"
+        />
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></WebView>
+
+</LinearLayout>

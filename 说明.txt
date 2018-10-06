@@ -1,0 +1,35 @@
+6.adb devices检查是否连接，之后adb push  D:\frida-server-12.0.8-android-arm64  /data/local/tmp/frida-server（我的server解压之后就在D盘）
+
+7.之后需要用到root的手机。
+
+adb shell
+
+su
+
+cd /data/local/tmp
+
+ls -al frida-server //查看一下
+
+chmod 777 frida-server //改变权限
+
+./frida-server
+
+这样就算是搭建好Android手机上的环境了
+
+8.我们要把端口转发到PC端
+
+adb forward tcp:27042 tcp:27042
+
+adb forward tcp:27043 tcp:27043
+
+9.完成之后我们打开cmd输入frida-ps -U 。
+
+我们也可以输入frida-ps -R 获取模拟器的。
+
+让 Frida 检查 USB-Device真机如果出现下图就成功了。
+
+常用命令：
+http://www.freebuf.com/sectool/120010.html
+https://blog.csdn.net/caiqiiqi/article/details/76774822
+查看进程：frida-ps -U 
+跟踪Chrome完成的特定通话：frida-trace -i "open" -U com.android.chrome
